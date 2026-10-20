@@ -1,12 +1,9 @@
-﻿
-
-#include <iostream>
+﻿#include <iostream>
+#include "List.h"
 
 using namespace std;
 
-int main()
-{
-    cout << "Hello World!\n";
+int main() {
+    List list;
+    return 0;
 }
-
-
