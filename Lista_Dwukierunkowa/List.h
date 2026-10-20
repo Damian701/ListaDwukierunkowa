@@ -13,6 +13,12 @@ private:
 public:
     List();
     ~List();
+
+    void addFront(int val);
+    void addBack(int val);
+    void display();
 };
+
+
 
 #endif
