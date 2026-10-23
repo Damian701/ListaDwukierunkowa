@@ -56,3 +56,7 @@ void List::display() {
     }
     cout << endl;
 }
+
+ListIterator List::getIterator() {
+    return ListIterator(head);
+}

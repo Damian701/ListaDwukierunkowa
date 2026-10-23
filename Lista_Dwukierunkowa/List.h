@@ -4,6 +4,7 @@
 #define LIST_H
 
 #include "Node.h"
+#include "ListIterator.h"
 
 class List {
 private:
@@ -13,6 +14,7 @@ private:
 public:
     List();
     ~List();
+    ListIterator getIterator();
 
     void addFront(int val);
     void addBack(int val);
