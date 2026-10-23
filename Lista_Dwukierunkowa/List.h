@@ -23,6 +23,8 @@ public:
     void removeFront();
     void removeBack();
     void removeAtIndex(int index);
+    void clear();
+    void displayReverse();
 };
 
 

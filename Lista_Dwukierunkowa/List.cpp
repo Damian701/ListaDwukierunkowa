@@ -10,7 +10,7 @@ List::List() {
 }
 
 List::~List() {
-   //pozniej
+    clear();
 }
 
 void List::addFront(int val) {
@@ -104,4 +104,19 @@ void List::removeAtIndex(int index) {
             delete current;
         }
     }
+}
+
+void List::clear() {
+    while (head != nullptr) removeFront();
+}
+
+void List::displayReverse() {
+    if (!tail) return;
+    Node* current = tail;
+    cout << "Od tylu: ";
+    while (current) {
+        std::cout << current->data << " ";
+        current = current->prev;
+    }
+    cout << endl;
 }
