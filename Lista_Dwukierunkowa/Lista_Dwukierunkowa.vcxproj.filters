@@ -21,12 +21,18 @@
     <ClCompile Include="List.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="NodeFactory.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
     <ClInclude Include="List.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeFactory.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
   </ItemGroup>

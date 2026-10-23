@@ -10,7 +10,6 @@ int main() {
     list.addFront(1);
     list.addBack(0);
     list.addBack(10);
-    list.addBack(5);
     list.display();
 
     return 0;

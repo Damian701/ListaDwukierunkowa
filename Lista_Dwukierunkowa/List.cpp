@@ -1,5 +1,6 @@
 #include <iostream>
 #include "List.h"
+#include "NodeFactory.h"
 
 using namespace std;
 
@@ -13,7 +14,7 @@ List::~List() {
 }
 
 void List::addFront(int val) {
-    Node* newNode = new Node(val);
+    Node* newNode = NodeFactory::createNode(val);
 
     if (head == nullptr) {
         head = newNode;
@@ -28,7 +29,7 @@ void List::addFront(int val) {
 
 
 void List::addBack(int val) {
-    Node* newNode = new Node(val);
+    Node* newNode = NodeFactory::createNode(val);
 
     if (tail == nullptr) {
         head = newNode;
