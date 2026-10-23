@@ -19,6 +19,10 @@ public:
     void addFront(int val);
     void addBack(int val);
     void display();
+    void addAtIndex(int index, int val);
+    void removeFront();
+    void removeBack();
+    void removeAtIndex(int index);
 };
 
 

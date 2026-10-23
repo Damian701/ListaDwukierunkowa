@@ -60,3 +60,48 @@ void List::display() {
 ListIterator List::getIterator() {
     return ListIterator(head);
 }
+
+void List::addAtIndex(int index, int val) {
+    if (index <= 0) { addFront(val); return; }
+    Node* current = head;
+    for (int i = 0; i < index && current != nullptr; ++i) current = current->next;
+    if (current == nullptr) { addBack(val); }
+    else {
+        Node* newNode = NodeFactory::createNode(val);
+        newNode->prev = current->prev;
+        newNode->next = current;
+        if (current->prev) current->prev->next = newNode;
+        else head = newNode;
+        current->prev = newNode;
+    }
+}
+void List::removeFront() {
+    if (!head) return;
+    Node* temp = head;
+    head = head->next;
+    if (head) head->prev = nullptr;
+    else tail = nullptr;
+    delete temp;
+}
+void List::removeBack() {
+    if (!tail) return;
+    Node* temp = tail;
+    tail = tail->prev;
+    if (tail) tail->next = nullptr;
+    else head = nullptr;
+    delete temp;
+}
+void List::removeAtIndex(int index) {
+    if (!head) return;
+    if (index == 0) { removeFront(); return; }
+    Node* current = head;
+    for (int i = 0; i < index && current != nullptr; ++i) current = current->next;
+    if (current) {
+        if (current == tail) removeBack();
+        else {
+            current->prev->next = current->next;
+            current->next->prev = current->prev;
+            delete current;
+        }
+    }
+}
