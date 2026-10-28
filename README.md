@@ -14,6 +14,7 @@ Iterator: Zaimplementowano klasę ListIterator, która pozwala na bezpieczne i u
 
 Modułowość: Każda klasa znajduje się w osobnym pliku nagłówkowym (.h) oraz pliku źródłowym (.cpp).
 
+
 🛠️ Zaimplementowane funkcjonalności
 
 Klasa List obsługuje następujące operacje:
@@ -28,6 +29,7 @@ Bezpieczne czyszczenie całej listy (dealokacja pamięci).
 
 Pobieranie obiektu Iteratora do ręcznej nawigacji krok po kroku.
 
+
 📁 Struktura plików
 
 Node.h - Definicja pojedynczego węzła listy.
@@ -39,6 +41,7 @@ ListIterator.h / ListIterator.cpp - Klasa iteratora do nawigacji po liście.
 List.h / List.cpp - Główna klasa zarządzająca logiką listy dwukierunkowej.
 
 main.cpp - Plik testowy sprawdzający wszystkie metody i scenariusze.
+
 
 💻 Kompilacja i uruchomienie
 
@@ -57,6 +60,7 @@ Na systemach Linux/macOS:
 Na systemie Windows:
 
 program_listy.exe
+
 
 
 📚 Narzędzia i Dokumentacja
